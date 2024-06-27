@@ -1,9 +1,7 @@
-import Demo from "./views/Demo";
-
 function App() {
   return (
     <>
-      <Demo />
+      Generate
     </>
   );
 }

@@ -1,0 +1,28 @@
+import { Menu, MenuProps } from "antd";
+import { HeaderMenuOptionList } from "./const";
+
+const HeaderMenuList: MenuProps["items"] = HeaderMenuOptionList.map((item) => ({
+  key: item.key,
+  label: item.label,
+  path: item.path,
+}));
+
+const MyHeader = () => {
+  return (
+    <>
+      <div className="demo-logo" />
+      <Menu
+        theme="dark"
+        mode="horizontal"
+        defaultSelectedKeys={["1"]}
+        onClick={({key}) => {
+          console.log(key);
+        }}
+        items={HeaderMenuList}
+        style={{ flex: 1, minWidth: 0 }}
+      />
+    </>
+  );
+};
+
+export default MyHeader;
