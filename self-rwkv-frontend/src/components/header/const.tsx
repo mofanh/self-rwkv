@@ -1,18 +1,18 @@
 
 export const HeaderMenuOptionList = [
     {
-        key: '/generate',
+        key: 'generate',
         label: '续写',
-        path: '/generate',
+        path: 'generate',
     },
     {
-        key: '/talk',
+        key: 'talk',
         label: '对话',
-        path: '/talk',
+        path: 'talk',
     },
     {
-        key: '/interaction',
+        key: 'interaction',
         label: '交互',
-        path: '/interaction',
+        path: 'interaction',
     }
 ];

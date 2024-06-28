@@ -1,4 +1,5 @@
 import { Menu, MenuProps } from "antd";
+import { useNavigate } from 'react-router-dom';
 import { HeaderMenuOptionList } from "./const";
 
 const HeaderMenuList: MenuProps["items"] = HeaderMenuOptionList.map((item) => ({
@@ -8,6 +9,7 @@ const HeaderMenuList: MenuProps["items"] = HeaderMenuOptionList.map((item) => ({
 }));
 
 const MyHeader = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="demo-logo" />
@@ -17,6 +19,7 @@ const MyHeader = () => {
         defaultSelectedKeys={["1"]}
         onClick={({key}) => {
           console.log(key);
+          navigate(key);
         }}
         items={HeaderMenuList}
         style={{ flex: 1, minWidth: 0 }}

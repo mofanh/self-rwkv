@@ -1,4 +1,4 @@
-function App() {
+function Generate() {
   return (
     <>
       Generate
@@ -6,4 +6,4 @@ function App() {
   );
 }
 
-export default App;
+export default Generate;

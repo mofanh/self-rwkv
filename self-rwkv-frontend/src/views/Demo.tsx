@@ -7,6 +7,7 @@ import type { MenuProps } from "antd";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import React from "react";
 import MyHeader from "../components/header/MyHeader";
+import { Outlet } from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -32,7 +33,7 @@ const items2: MenuProps["items"] = [
   };
 });
 
-const App: React.FC = () => {
+const Demo: React.FC = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
@@ -46,7 +47,7 @@ const App: React.FC = () => {
         <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
+          <Breadcrumb.Item>Demo</Breadcrumb.Item>
         </Breadcrumb>
         <Layout
           style={{
@@ -71,6 +72,7 @@ const App: React.FC = () => {
           </Sider>
           <Content style={{ padding: "0 24px", minHeight: 280 }}>
             Content
+            <Outlet />
           </Content>
         </Layout>
       </Content>
@@ -81,4 +83,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Demo;
