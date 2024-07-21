@@ -1,7 +1,9 @@
 import { Layout, theme } from "antd";
 import Sider from "antd/es/layout/Sider";
-import { Content } from "antd/es/layout/layout";
+import { Content, Footer } from "antd/es/layout/layout";
+import ChatInput from "../component/ChatInput";
 import ChatMenu from "../component/ChatMenu";
+import MessageArea from "../component/MessageArea";
 
 export const ChatLayout = () => {
   // { dispatch, children, chat }
@@ -24,7 +26,7 @@ export const ChatLayout = () => {
   } = theme.useToken();
   return (
     <div>
-      <Layout style={{height: '78vh'}}>
+      <Layout style={{ height: '78vh' }}>
         <Sider
           style={{ background: colorBgContainer }}>
           <ChatMenu />
@@ -36,7 +38,10 @@ export const ChatLayout = () => {
             minHeight: 280,
           }}
         >
-          chat
+          <MessageArea />
+          <Footer style={{ textAlign: "center", maxWidth: '40vw'}}>
+            <ChatInput />
+          </Footer>
         </Content>
       </Layout>
     </div>

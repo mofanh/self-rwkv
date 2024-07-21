@@ -9,9 +9,7 @@ import "antd/dist/reset.css";
 import zhCN from "antd/locale/zh_CN";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-
-    <ConfigProvider locale={zhCN}>
-      <RouterProvider router={router} />
-    </ConfigProvider>
-
+  <ConfigProvider locale={zhCN}>
+    <RouterProvider router={router} />
+  </ConfigProvider>
 );
