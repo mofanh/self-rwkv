@@ -6,9 +6,9 @@ export const HeaderMenuOptionList = [
         path: 'generate',
     },
     {
-        key: 'talk',
+        key: 'chat',
         label: '对话',
-        path: 'talk',
+        path: 'chat',
     },
     {
         key: 'interaction',

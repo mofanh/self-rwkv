@@ -4,10 +4,10 @@ import {
   UserOutlined
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Breadcrumb, Layout, theme } from "antd";
 import React from "react";
-import MyHeader from "../components/header/MyHeader";
 import { Outlet } from "react-router-dom";
+import MyHeader from "../components/header/MyHeader";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -56,7 +56,7 @@ const Demo: React.FC = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-          <Sider
+          {/* <Sider
             style={{ background: colorBgContainer }}
             width={200}
             // collapsible={true}
@@ -69,15 +69,14 @@ const Demo: React.FC = () => {
               style={{ height: "100%" }}
               items={items2}
             />
-          </Sider>
-          <Content style={{ padding: "0 24px", minHeight: 280 }}>
-            Content
+          </Sider> */}
+          <Content style={{ minHeight: 280 }}>
             <Outlet />
           </Content>
         </Layout>
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+        Self RWKV ©{new Date().getFullYear()} Created by Lier
       </Footer>
     </Layout>
   );
