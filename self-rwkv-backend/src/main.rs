@@ -1,4 +1,4 @@
-use salvo::prelude::*;
+nvidiause salvo::prelude::*;
 
 #[handler]
 async fn hello() -> &'static str {

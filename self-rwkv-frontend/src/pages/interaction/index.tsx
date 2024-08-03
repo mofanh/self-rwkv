@@ -1,7 +1,10 @@
+import LiteGraph from "../../components/LiteGraph";
+
 function Interaction() {
+
   return (
     <>
-        Interaction
+        <LiteGraph />
     </>
   );
 }

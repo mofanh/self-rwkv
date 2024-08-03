@@ -14,5 +14,10 @@ export const HeaderMenuOptionList = [
         key: 'interaction',
         label: '交互',
         path: 'interaction',
+    },
+    {
+        key: 'pipeline',
+        label: '流水线',
+        path: 'pipeline',
     }
 ];

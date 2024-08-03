@@ -1,9 +1,10 @@
 // src/router/index.jsx
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../pages/ErrorPage";
-import Chat from "../pages/chat/chat";
+import Chat from "../pages/chat";
 import Generate from "../pages/generate/Generate";
-import Interaction from "../pages/interaction/Interaction";
+import Interaction from "../pages/interaction";
+import Pipeline from "../pages/pipeline";
 import Demo from "../views/Demo";
 import Login from "../views/Login";
  
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: 'chat',
                 element: <Chat />,
+            },
+            {
+                path: 'pipeline',
+                element: <Pipeline />,
             },
         ],
     },
